@@ -16,20 +16,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import groovy.xml.XmlSlurper
-import groovy.util.slurpersupport.GPathResult
+import groovy.xml.XmlSlurper as XmlSlurper
+import groovy.util.slurpersupport.GPathResult as GPathResult
 import static org.assertj.core.api.Assertions.*
-import com.kms.katalon.core.testobject.RequestObject
-import com.kms.katalon.core.testobject.ResponseObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webservice.verification.WSResponseManager
-import groovy.json.JsonSlurper
+import com.kms.katalon.core.testobject.RequestObject as RequestObject
+import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
+import com.kms.katalon.core.webservice.verification.WSResponseManager as WSResponseManager
+import groovy.json.JsonSlurper as JsonSlurper
 
-WS.sendRequest(findTestObject('SOAP Service/CalculatorSoap/Add'))
+WS.sendRequest(findTestObject('Calculator_SOAP_service/CalculatorSoap/Add'))
+
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
 String xml1 = response.responseBodyContent
-def dataValue= new XmlSlurper().parseText(xml1)
+
+def dataValue = new XmlSlurper().parseText(xml1)
+
 def value = dataValue.AddResult.text()
+
 print(value)
 
 WS.verifyElementPropertyValue(response, 'AddResult', 33)
@@ -37,5 +41,4 @@ WS.verifyElementPropertyValue(response, 'AddResult', 33)
 WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyResponseStatusCodeInRange(response, 100, 200)
-
 
