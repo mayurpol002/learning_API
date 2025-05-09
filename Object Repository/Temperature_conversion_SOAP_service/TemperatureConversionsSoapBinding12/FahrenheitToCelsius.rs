@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>FahrenheitToCelsius</name>
+   <tag></tag>
+   <elementGuidId>a357739f-588a-46ec-9545-9ed13293ca29</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>true</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>text/xml; charset=utf-8</value>
+      <webElementGuid>3b239f44-372b-47c2-a331-6bef89036e3c</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>10.1.0</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <path></path>
+   <restRequestMethod></restRequestMethod>
+   <restUrl></restUrl>
+   <serviceType>SOAP</serviceType>
+   <soapBody>&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:tem=&quot;http://webservices.daehosting.com/temperature&quot;>&#xd;
+   &lt;soap:Header/>&#xd;
+   &lt;soap:Body>&#xd;
+      &lt;tem:FahrenheitToCelsius>&#xd;
+         &lt;tem:nFahrenheit>1000.00&lt;/tem:nFahrenheit>&#xd;
+      &lt;/tem:FahrenheitToCelsius>&#xd;
+   &lt;/soap:Body>&#xd;
+&lt;/soap:Envelope></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod>SOAP12</soapRequestMethod>
+   <soapServiceEndpoint>http://webservices.daehosting.com/services/TemperatureConversions.wso</soapServiceEndpoint>
+   <soapServiceFunction>FahrenheitToCelsius</soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <wsdlAddress>http://webservices.daehosting.com/services/TemperatureConversions.wso?WSDL</wsdlAddress>
+</WebServiceRequestEntity>

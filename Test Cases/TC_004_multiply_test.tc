@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_004_multiply_test</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>24bb7a96-3218-4a71-9b0b-c8b57547b95e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>907fb9c0-e6b8-4843-976b-e79fe96ad5ee</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1a9d3fe7-7a1a-416b-9216-09a96f4e5d28</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('Multiply').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>907fb9c0-e6b8-4843-976b-e79fe96ad5ee</id>
+      <masked>false</masked>
+      <name>intA</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1a9d3fe7-7a1a-416b-9216-09a96f4e5d28</id>
+      <masked>false</masked>
+      <name>intB</name>
+   </variable>
+</TestCaseEntity>
